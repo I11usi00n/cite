@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Виртуальная Страница</title>
+    <title>Запись на Маникюр</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -14,7 +14,7 @@
             color: #333;
         }
         header {
-            background: #007BFF;
+            background: #FF6F61;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -48,6 +48,13 @@
         .cta button:hover {
             background: #218838;
         }
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        p {
+            line-height: 1.6;
+        }
         form {
             display: flex;
             flex-direction: column;
@@ -60,13 +67,13 @@
             border-radius: 5px;
         }
         input[type="submit"] {
-            background: #007BFF;
+            background: #FF6F61;
             color: white;
             border: none;
             cursor: pointer;
         }
         input[type="submit"]:hover {
-            background: #0056b3;
+            background: #e55d55;
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -80,20 +87,24 @@
 </head>
 <body>
     <header>
-        <h1>Добро пожаловать на виртуальную страницу!</h1>
+        <h1>Запись на Маникюр</h1>
     </header>
     
     <div class="container">
+        <h2>Профессиональный Маникюр</h2>
+        <p>Добро пожаловать в наш салон! Мы предлагаем качественные услуги маникюра, чтобы ваши ногти всегда выглядели безупречно. Используем только лучшие материалы и современные техники.</p>
+        
         <div class="cta">
-            <h2>Присоединяйтесь к нам сегодня!</h2>
-            <button onclick="document.getElementById('contact-form').scrollIntoView();">Связаться с нами</button>
+            <h3>Запишитесь на сеанс уже сегодня!</h3>
+            <button onclick="document.getElementById('contact-form').scrollIntoView();">Записаться</button>
         </div>
 
-        <h3>Форма обратной связи</h3>
+        <h3>Форма записи</h3>
         <form id="contact-form">
             <input type="text" placeholder="Ваше имя" required>
             <input type="email" placeholder="Ваш email" required>
-            <textarea rows="4" placeholder="Ваше сообщение" required></textarea>
+            <input type="tel" placeholder="Ваш телефон" required>
+            <textarea rows="4" placeholder="Ваше сообщение (например, предпочтительное время)" required></textarea>
             <input type="submit" value="Отправить">
         </form>
     </div>
